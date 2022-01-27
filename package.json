@@ -1,0 +1,27 @@
+{
+  "name": "elbrus",
+  "version": "1.0.0",
+  "description": "hotel website",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd frontend && npm start",
+    "server": "nodemon ./server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Nekoula Haddad",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.7",
+    "nodemailer": "^6.7.2",
+    "nodemon": "^2.0.15",
+    "path": "^0.12.7",
+    "yookassa": "^0.1.1"
+  }
+}

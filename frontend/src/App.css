@@ -1,0 +1,35 @@
+.loginButton {
+  z-index: 1;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: calc(0.1 * 1em);
+  padding: 4px 10px 4px 10px;
+  outline: 2px solid #db2655;
+  margin-right: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+.loginButton:hover {
+  background-color: #db2655;
+}
+.phone-header {
+  text-align: left !important;
+}
+.hover-botton:hover {
+  background-color: black !important;
+}
+.ui-button--secondary-dark:not(.editor-button):hover {
+  background-color: red;
+}
+.hover-red-background:hover,
+.ui-button--secondary-alt-light:not(.editor-button):hover,
+.ui-button--secondary-dark:not(.editor-button):hover {
+  background-color: #db2655 !important;
+}
+.ui-button--secondary-light:not(.editor-button):hover {
+  background-color: black !important;
+}
+.hideAlert {
+  display: none;
+}
