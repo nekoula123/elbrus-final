@@ -92,7 +92,7 @@ export default function Header1({ token, setToken }) {
                   to="/login"
                   className="zoom-in-top_mBq slow_3YD loginButton"
                 >
-                  ЛОГИН
+                  ВХОД
                 </Link>
               ) : (
                 <div

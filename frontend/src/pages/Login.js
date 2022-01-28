@@ -19,7 +19,7 @@ export default function Login({ token, setToken }) {
         <Header1 token={token} setToken={setToken} />
       </div>
       <LowerHeader
-        title="Логин"
+        title="Вход"
         image="https://res2.weblium.site/res/5c6ae63db121ab00262187c1/5c6bfb856655df00231edc7a_optimized_3840.webp"
       />
       <LoginForm token={token} setToken={setToken} />
