@@ -1,5 +1,5 @@
 export const fetchData = async () => {
-  const result = await fetch("http://91.210.168.216:5000/rooms/", {
+  const result = await fetch("https://elbrusplaza.com/rooms/", {
     method: "get",
     headers: { "Content-Type": "application/json" },
   })
@@ -11,7 +11,7 @@ export const fetchData = async () => {
 };
 
 export const editData = async ({ id }, data) => {
-  const result = await fetch(`http://91.210.168.216:5000/rooms/edit/${id}`, {
+  const result = await fetch(`https://elbrusplaza.com/rooms/edit/${id}`, {
     method: "put",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ data }),
@@ -25,7 +25,7 @@ export const editData = async ({ id }, data) => {
 };
 
 export const getRoom = async ({ id }) => {
-  const result = await fetch(`http://91.210.168.216:5000/rooms/get/${id}`, {
+  const result = await fetch(`https://elbrusplaza.com/rooms/get/${id}`, {
     method: "get",
     headers: { "Content-Type": "application/json" },
   })
@@ -37,7 +37,7 @@ export const getRoom = async ({ id }) => {
 };
 
 export const loginSubmit = async ({ email, password }) => {
-  const result = await fetch("http://91.210.168.216:5000/user/login", {
+  const result = await fetch("https://elbrusplaza.com/user/login", {
     method: "post",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -53,7 +53,7 @@ export const loginSubmit = async ({ email, password }) => {
 };
 
 export const sendEmail = async ({ name, phone, email, text }) => {
-  const result = await fetch("http://91.210.168.216:5000/mail/", {
+  const result = await fetch("https://elbrusplaza.com/mail/", {
     method: "post",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -71,7 +71,7 @@ export const sendEmail = async ({ name, phone, email, text }) => {
 };
 
 export const reserveRoom = async ({ id }, data) => {
-  const result = await fetch(`http://91.210.168.216:5000/rooms/pay/${id}`, {
+  const result = await fetch(`https://elbrusplaza.com/rooms/pay/${id}`, {
     method: "post",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ data }),
