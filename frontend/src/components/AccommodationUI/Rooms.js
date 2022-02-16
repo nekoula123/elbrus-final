@@ -336,29 +336,7 @@ export default function Rooms({ token }) {
                                     <span
                                       style={{ display: "block" }}
                                       className="w-text-block "
-                                    >
-                                      <span className="w-text-content">
-                                        <a
-                                          href="https://auth.robokassa.ru/Merchant/Index.aspx?MerchantLogin=elbrusplaza&InvId=0&Culture=ru&Encoding=utf-8&OutSum=5000&SignatureValue=c763ec577f87c5074c7a524394389d29"
-                                          target="_self"
-                                          data-action="external"
-                                          className="ui-link"
-                                        >
-                                          <span
-                                            style={{
-                                              color: "rgb(69,69,69)",
-                                              fontSize: "24px",
-                                            }}
-                                          >
-                                            <span
-                                              style={{ fontWeight: "bold" }}
-                                            >
-                                              ОПЛАТИТЬ
-                                            </span>
-                                          </span>
-                                        </a>
-                                      </span>
-                                    </span>
+                                    ></span>
                                   </p>
                                 </div>
                               </div>
@@ -367,12 +345,8 @@ export default function Rooms({ token }) {
                               <div className="w-btns-group w-btns-group--center w-btns-group--lg-left">
                                 <ul className="w-btns-group__inner">
                                   <li className="w-btns-group__item">
-                                    <ScrollLink
-                                      spy={true}
-                                      smooth={true}
-                                      offset={50}
-                                      duration={500}
-                                      to="myScrollToElement"
+                                    <Link
+                                      to={`/accommodation/payment/${room._id}`}
                                       className="button_2W3 button--left-icon_15k w-button ui-button ui-button--secondary-light ui-button--size-md button--with-icon_3MG button--font-weight-bold_1Nu hover-botton"
                                     >
                                       <span className="button__border_1J- ui-button__border" />
@@ -461,7 +435,7 @@ export default function Rooms({ token }) {
                                           забронировать
                                         </span>
                                       </span>
-                                    </ScrollLink>
+                                    </Link>
                                   </li>
                                 </ul>
                               </div>

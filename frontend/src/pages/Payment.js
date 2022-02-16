@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import LowerHeader from "../components/UI/LowerHeader";
-import Information from "../components/AccommodationUI/Information";
 import Header1 from "../components/header/Header1";
-import Rooms from "../components/AccommodationUI/Rooms";
+import ReservationFormAccommodation from "../components/PaymentUI/ReservationFormAccommodation";
 
-export default function Accommodation({ token, setToken }) {
+export default function Payment({ token, setToken }) {
   return (
     <React.Fragment>
       <div
@@ -21,11 +20,10 @@ export default function Accommodation({ token, setToken }) {
         <Header1 token={token} setToken={setToken} />
       </div>
       <LowerHeader
-        title="Номера"
+        title="Оплата"
         image="https://res2.weblium.site/res/5c6ae63db121ab00262187c1/5c6bfb856655df00231edc7a_optimized_3840.webp"
       />
-      <Information />
-      <Rooms token={token} />
+      <ReservationFormAccommodation />
     </React.Fragment>
   );
 }

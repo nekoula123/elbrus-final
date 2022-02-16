@@ -16,7 +16,6 @@ export const login = async (req, res) => {
       let user = await User.findOne({ email });
       if (password !== user.password) {
         return res.status(400).json({ msg: "Пароль недействителен" });
-        //console.log("Dsds");
       }
       generateToken(user._id).then((token) => {
         user.token = token;

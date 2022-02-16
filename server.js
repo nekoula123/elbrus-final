@@ -5,10 +5,10 @@ import roomRoutes from "./routes/roomRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
 import mailRoutes from "./routes/mailRoutes.js";
 import path from "path";
+import config from "./config/index.js";
 const __dirname = path.resolve();
 const app = express();
-const db =
-  "mongodb+srv://nekoula:Bravo222@cluster0.115kg.mongodb.net/elbrus?retryWrites=true&w=majority";
+const db = config.MONGO_URI;
 
 app.use(express.json());
 

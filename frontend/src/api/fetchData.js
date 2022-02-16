@@ -17,6 +17,7 @@ export const editData = async ({ id }, data) => {
     body: JSON.stringify({ data }),
   })
     .then((response) => {
+      console.log(response);
       return response.json();
     })
     .catch((err) => console.log(err));
@@ -29,11 +30,9 @@ export const getRoom = async ({ id }) => {
     headers: { "Content-Type": "application/json" },
   })
     .then((response) => {
-      console.log(response);
       return response.json();
     })
     .catch((err) => console.log(err));
-  console.log(result);
   return result;
 };
 
@@ -63,6 +62,19 @@ export const sendEmail = async ({ name, phone, email, text }) => {
       email: email,
       msg: text,
     }),
+  })
+    .then((response) => {
+      return response.json();
+    })
+    .catch((err) => console.log(err));
+  return result;
+};
+
+export const reserveRoom = async ({ id }, data) => {
+  const result = await fetch(`http://91.210.168.216:5000/rooms/pay/${id}`, {
+    method: "post",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ data }),
   })
     .then((response) => {
       return response.json();

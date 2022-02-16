@@ -17,6 +17,8 @@ const RoomSchema = new Schema({
   },
   newYear: { type: String },
   discription: { type: String },
+  reserved: { type: Array },
+  numberOfRooms: { type: String },
 });
 
 export const Room = mongoose.model("Room", RoomSchema);

@@ -11,12 +11,10 @@ export default function Restaurant() {
   const length = slides.length;
 
   const nextSlide = () => {
-    console.log(current);
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
 
   const prevSlide = () => {
-    console.log(current);
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
 

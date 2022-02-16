@@ -17,6 +17,7 @@ import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import EditRoom from "./pages/EditRoom";
 import Login from "./pages/Login";
+import Payment from "./pages/Payment";
 function App() {
   const [token, setToken] = useState("");
 
@@ -64,6 +65,10 @@ function App() {
               <Route
                 path="/login"
                 element={<Login token={token} setToken={setToken} />}
+              />
+              <Route
+                path="/accommodation/Payment/:id"
+                element={<Payment token={token} setToken={setToken} />}
               />
             </Route>
           </Routes>

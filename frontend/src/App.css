@@ -1,6 +1,6 @@
 .loginButton {
   z-index: 1;
-  color: #fff;
+  color: #db2655;
   font-weight: 500;
   letter-spacing: calc(0.1 * 1em);
   padding: 3px 20px 3px 20px;
@@ -12,6 +12,31 @@
 }
 .loginButton:hover {
   background-color: #db2655;
+  color: #fff;
+}
+.left-cashback {
+  width: 50%;
+}
+.react-datepicker-wrapper {
+  width: 100% !important;
+}
+
+.cashBackButton {
+  padding: 10px 0px 10px 0px;
+  border: 1px solid #c6c6c6;
+}
+.date-input-style {
+  border-color: #b01f45 !important;
+  background-color: rgba(33, 33, 33, 0.12) !important;
+}
+.react-datepicker__close-icon {
+  margin-top: 5px;
+}
+.react-datepicker__close-icon:after {
+  background-color: #b01f45 !important;
+  height: 20px !important;
+  width: 20px !important;
+  font-size: 16px !important;
 }
 .phone-header {
   text-align: left !important;
@@ -32,4 +57,26 @@
 }
 .hideAlert {
   display: none;
+}
+
+@media (min-width: 1200px) {
+  .cashback {
+    width: 50%;
+  }
+  .cashbackContainer {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 992px) {
+  .cashback {
+    width: 100%;
+    padding-top: 40px;
+  }
+  .left-cashback {
+    width: 100%;
+  }
+  .cashbackContainer {
+    flex-direction: column;
+  }
 }

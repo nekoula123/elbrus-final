@@ -86,14 +86,8 @@ export default function RoomView() {
                             offset={-150}
                             duration={500}
                             to="myScrollToElement"
-                            className="w-btns-group__item button_2W3 w-button ui-button ui-button--primary-dark ui-button--size-lg"
                           >
-                            <span className="button__border_1J- ui-button__border" />
-                            <span className="button__inner_2of">
-                              <span className="button__content_1_I">
-                                СМОТРЕТЬ НОМЕРА
-                              </span>
-                            </span>
+                            СМОТРЕТЬ НОМЕРА
                           </ScrollLink>
                         </div>
                       </div>
