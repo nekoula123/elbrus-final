@@ -1,20 +1,20 @@
 import React from "react";
 import "./MapComponents.css";
+import { YMaps, Map, Placemark } from "react-yandex-maps";
 
 export default function MapComponent() {
   return (
     <div className="map_container">
       <div className="map_holder">
-        <iframe
-          title="elbrus_map"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11624.501139054675!2d42.621750174477306!3d43.24879601538712!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405979cfbb87a681%3A0x1a30be61fbf25272!2sElbrusplaza%20Hotel!5e0!3m2!1sen!2sus!4v1642502492104!5m2!1sen!2sus"
-          width="100%"
-          height="100%"
-          frameBorder="0"
-          style={{ border: 0 }}
-          aria-hidden="false"
-          tabIndex="0"
-        />
+        <YMaps>
+          <Map
+            height="100%"
+            width="100%"
+            defaultState={{ center: [43.2492, 42.631482], zoom: 16 }}
+          >
+            <Placemark geometry={[43.2492, 42.631482]} />
+          </Map>
+        </YMaps>
       </div>
       <div className="title-hotel">
         <div
