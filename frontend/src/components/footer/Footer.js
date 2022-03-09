@@ -65,10 +65,23 @@ export default function Footer() {
                   </p>
                 </Link>
               </div>
+              <Link to="/paymentRecomendation">
+                <p
+                  className="text_1k0 ui-text w-body ui-text--light zoom-in-center_1T- normal_2Pr"
+                  data-component="text"
+                  data-animation="zoom-in-center_1T- normal_2Pr"
+                  style={{ marginTop: "20px" }}
+                >
+                  <span className="w-text-block" style={{ display: "block" }}>
+                    <span className="w-text-content">Правила оплаты</span>
+                  </span>
+                </p>
+              </Link>
               <p
-                className="logo__desc___xw9x text_1k0 ui-text w-body ui-text--light zoom-in-center_1T- normal_2Pr"
+                className="text_1k0 ui-text w-body ui-text--light zoom-in-center_1T- normal_2Pr"
                 data-component="text"
                 data-animation="zoom-in-center_1T- normal_2Pr"
+                style={{ marginTop: "20px" }}
               >
                 <span className="w-text-block" style={{ display: "block" }}>
                   <span className="w-text-content">
